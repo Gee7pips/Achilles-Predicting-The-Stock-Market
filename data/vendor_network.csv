@@ -1,0 +1,11 @@
+project_id,contractor,subcontractor,insider,amount
+1,ACME Corp,BuildIt Ltd,John Doe,1000000
+2,SunPower Ltd,BuildIt Ltd,Jane Smith,800000
+3,ACME Corp,SteelWorks,John Doe,1200000
+4,SunPower Ltd,SteelWorks,Jane Smith,900000
+5,ACME Corp,BuildIt Ltd,John Doe,1100000
+6,GreenInfra,BuildIt Ltd,John Doe,950000
+7,GreenInfra,SteelWorks,Jane Smith,870000
+8,ACME Corp,SteelWorks,John Doe,1050000
+9,SunPower Ltd,BuildIt Ltd,Jane Smith,990000
+10,ACME Corp,BuildIt Ltd,John Doe,1150000

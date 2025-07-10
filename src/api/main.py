@@ -6,6 +6,7 @@ from src.api.risk_score_api import router as risk_score_router
 from src.api.doc_risk_api import router as doc_risk_router
 from src.api.voice_risk_api import router as voice_risk_router
 from src.api.anomaly_api import router as anomaly_router
+from src.api.fraud_graph_api import router as fraud_graph_router
 import yaml
 import os
 from typing import List
@@ -34,6 +35,7 @@ app.include_router(risk_score_router)
 app.include_router(doc_risk_router)
 app.include_router(voice_risk_router)
 app.include_router(anomaly_router)
+app.include_router(fraud_graph_router)
 
 @app.post("/admin/upload_project", response_model=ProjectUploadResponse, tags=["Admin"])
 def upload_project(file: UploadFile = File(...), username: str = Depends(admin_auth)):
