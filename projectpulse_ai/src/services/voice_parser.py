@@ -3,7 +3,6 @@
 Uses SpeechRecognition to transcribe WAV/MP3 files. For unsupported formats, will return empty string.
 """
 from pathlib import Path
-from typing import Tuple
 
 import speech_recognition as sr
 from pydub import AudioSegment
