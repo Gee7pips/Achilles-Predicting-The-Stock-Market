@@ -1,7 +1,6 @@
 """Summarization service using OpenAI placeholder."""
 from pathlib import Path
 import yaml
-from pathlib import Path
 from typing import Dict
 
 CONFIG_PATH = Path(__file__).resolve().parent.parent.parent / "config" / "config.yaml"

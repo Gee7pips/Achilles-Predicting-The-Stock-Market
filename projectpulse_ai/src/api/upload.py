@@ -5,6 +5,8 @@ import shutil
 
 from src.services.document_parser import parse_document, classify_document
 from src.services.risk_engine import register_document_features
+from src.services.voice_parser import transcribe_voice
+from src.services.summarization import summarize_text
 
 router = APIRouter(tags=["Upload & Parse"])
 
@@ -40,3 +42,21 @@ async def upload_documents(files: List[UploadFile] = File(...)):
             }
         )
     return {"uploaded": responses}
+
+
+@router.post("/upload/voice", summary="Upload voice notes for transcription")
+async def upload_voice_notes(files: List[UploadFile] = File(...)):
+    responses = []
+    for file in files:
+        file_path = UPLOAD_DIR / file.filename
+        with file_path.open("wb") as buffer:
+            shutil.copyfileobj(file.file, buffer)
+
+        try:
+            transcription = transcribe_voice(file_path)
+            summary = summarize_text(transcription)
+        except Exception as exc:
+            raise HTTPException(status_code=500, detail=f"Failed to transcribe {file.filename}: {exc}")
+
+        responses.append({"filename": file.filename, "transcription": transcription, "summary": summary})
+    return {"voice_notes": responses}

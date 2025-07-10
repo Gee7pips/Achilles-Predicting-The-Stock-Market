@@ -4,6 +4,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from pathlib import Path
 
 from src.api import upload, projects, admin
+from src.api import voice
+import src.models  # ensure mock model is generated at startup
 
 # Load configuration
 CONFIG_PATH = Path(__file__).resolve().parent.parent / "config" / "config.yaml"
@@ -24,6 +26,7 @@ app.add_middleware(
 app.include_router(upload.router, prefix="/api")
 app.include_router(projects.router, prefix="/api")
 app.include_router(admin.router, prefix="/api")
+app.include_router(voice.router, prefix="/api")
 
 
 @app.get("/health")

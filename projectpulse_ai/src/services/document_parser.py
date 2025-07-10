@@ -10,7 +10,6 @@ import PyPDF2
 import docx
 import openpyxl
 import pytesseract
-from PIL import Image
 
 FIELD_REGEXES = {
     "project_name": re.compile(r"project name[:\-]?\s*(.+)", re.IGNORECASE),
