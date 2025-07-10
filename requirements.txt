@@ -5,3 +5,6 @@ pandas
 pydantic
 PyYAML
 scikit-learn
+PyPDF2
+python-docx
+spacy
