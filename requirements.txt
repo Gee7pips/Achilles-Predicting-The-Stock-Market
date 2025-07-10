@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+python-multipart
+pydantic
+streamlit
+openai
+pytesseract
+pdfplumber
+python-docx
+pandas
+scikit-learn
+joblib
+PyYAML
+python-docx
+python-pptx
+xlrd
+openpyxl

@@ -1,0 +1,8 @@
+# ProjectPulse.AI config
+openai_api_key: "YOUR_OPENAI_API_KEY"
+debug: true
+ocr_enabled: true
+ml_model_path: "data/mock_risk_model.pkl"
+allowed_file_types: ["pdf", "docx", "xlsx"]
+admin_user: "admin"
+admin_password: "admin123"

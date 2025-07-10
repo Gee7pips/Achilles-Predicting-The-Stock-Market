@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "name": "Sample Project",
+    "contractor": "ABC Ltd.",
+    "budget": 1000000,
+    "milestones": ["Start", "Phase 1", "Phase 2", "Complete"],
+    "documents": ["contract.pdf", "invoice1.pdf"],
+    "risk_score": 0.2
+  },
+  {
+    "id": "2",
+    "name": "Demo Dam",
+    "contractor": "XYZ Construction",
+    "budget": 5000000,
+    "milestones": ["Start", "Design", "Construction", "Inspection", "Complete"],
+    "documents": ["contract.docx", "progress_report.pdf"],
+    "risk_score": 0.7
+  }
+]

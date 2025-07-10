@@ -1,3 +1,37 @@
+# ProjectPulse.AI
+
+ProjectPulse.AI is an AI-powered project monitoring and oversight platform designed for Development Finance Institutions (DFIs) like the DBSA, AfDB, and municipalities.
+
+## MVP Features
+- **Upload & Parse Project Documents**: Accepts PDFs, Word, Excel; extracts key fields; OCR for scanned docs; auto-classifies document type.
+- **Risk Signal Engine**: Flags risk signals (budget overruns, delays, missing docs, suspicious vendors) using rules and basic ML.
+- **Interactive Dashboard**: Streamlit dashboard with sortable risk scores, drill-down views, timelines, flagged risks, and AI summaries.
+- **AI Summarization & Voice Note Parser**: Summarizes docs/voice notes, highlights risks, and suggests stakeholder updates.
+- **Admin Panel**: Basic auth, project upload, risk dashboard.
+- **Config & Deployment**: YAML config, Dockerfile, docker-compose.
+
+## Structure
+- `/src/api/` - FastAPI endpoints
+- `/src/services/` - Business logic, ML, NLP, OCR
+- `/src/models/` - Pydantic models, DB schemas
+- `/data/` - Sample/test data
+- `/config/` - Config files
+- `/notebooks/` - Prototyping, EDA
+
+## Install & Run
+```bash
+git clone <repo-url>
+cd ProjectPulse.AI
+pip install -r requirements.txt
+uvicorn src.api.main:app --reload
+streamlit run src/api/dashboard.py
+```
+
+For Docker:
+```bash
+docker-compose up --build
+```
+
 # Achilles, Neural Network to Predict Commodities 
 Integration with Trading Bot for Automatic Trading 🖤🤖🖤     💲Ready to Predict the Future?💲
 
