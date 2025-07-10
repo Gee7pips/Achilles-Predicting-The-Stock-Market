@@ -1,0 +1,13 @@
+project_id,date,milestone,progress_percent,weather,supply_chain_delay,payment_status
+1,2024-01-01,Kickoff,0,Clear,0,Paid
+1,2024-01-15,Phase 1,20,Clear,0,Paid
+1,2024-02-01,Phase 1,40,Rain,1,Pending
+1,2024-02-15,Phase 2,60,Clear,0,Paid
+1,2024-03-01,Phase 2,70,Storm,1,Pending
+1,2024-03-15,Completion,90,Clear,0,Paid
+1,2024-04-01,Completion,100,Clear,0,Paid
+2,2024-01-01,Kickoff,0,Clear,0,Paid
+2,2024-01-20,Phase 1,30,Clear,0,Paid
+2,2024-02-10,Phase 2,50,Rain,1,Pending
+2,2024-03-01,Completion,80,Storm,1,Pending
+2,2024-03-20,Completion,100,Clear,0,Paid

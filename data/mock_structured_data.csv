@@ -1,0 +1,11 @@
+project_id,budget_variance,schedule_slippage,vendor_history_score,missing_docs,variation_orders,country,project_type,category,label
+1,0.15,0.10,0.9,0,1,South Africa,Infrastructure,Water,0
+2,0.35,0.25,0.6,1,3,Nigeria,Energy,Solar,1
+3,0.05,0.00,1.0,0,0,Kenya,Transport,Road,0
+4,0.50,0.40,0.4,1,5,South Africa,Infrastructure,Bridge,1
+5,0.10,0.05,0.8,0,2,Egypt,Health,Hospital,0
+6,0.60,0.30,0.3,1,6,Nigeria,Energy,Grid,1
+7,0.20,0.15,0.7,0,1,Kenya,Transport,Rail,0
+8,0.45,0.35,0.5,1,4,South Africa,Infrastructure,Water,1
+9,0.08,0.02,0.95,0,0,Egypt,Health,Clinic,0
+10,0.55,0.50,0.2,1,7,Nigeria,Energy,Wind,1
