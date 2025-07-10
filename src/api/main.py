@@ -2,6 +2,7 @@ from fastapi import FastAPI, UploadFile, File, Depends, HTTPException, status
 from fastapi.security import HTTPBasic, HTTPBasicCredentials
 from src.services import document_parser, risk_engine, summarizer
 from src.models.project import Project, ProjectUploadResponse
+from src.api.risk_score_api import router as risk_score_router
 import yaml
 import os
 from typing import List
@@ -25,6 +26,8 @@ def admin_auth(credentials: HTTPBasicCredentials = Depends(security)):
     if not (correct_user and correct_pass):
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid credentials")
     return credentials.username
+
+app.include_router(risk_score_router)
 
 @app.post("/admin/upload_project", response_model=ProjectUploadResponse, tags=["Admin"])
 def upload_project(file: UploadFile = File(...), username: str = Depends(admin_auth)):
