@@ -1,0 +1,6 @@
+# Environment & runtime configuration
+
+OPENAI_API_KEY: "your_api_key_here"
+ADMIN_USERNAME: "admin"
+ADMIN_PASSWORD: "admin123"
+MODEL_PATH: "src/models/mock_risk_model.pkl"

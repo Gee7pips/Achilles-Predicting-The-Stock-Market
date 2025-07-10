@@ -1,0 +1,3 @@
+"""
+ProjectPulse.AI source package
+"""
