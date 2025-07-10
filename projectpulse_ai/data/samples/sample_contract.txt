@@ -1,5 +1,8 @@
-Project Name: Rural Water Project
-Contractor: CleanWater Africa
-Budget: $900,000
-Milestones: Mobilisation, Drilling, Installation
-Terms: Payment upon milestone completion
+Project Name: Sample Infrastructure Upgrade
+Contractor: BuildCo Ltd
+Budget: $1,200,000
+
+CONTRACT AGREEMENT
+Start date: 2024-01-10
+Completion date: 2025-06-30
+Key clauses: penalties for delays, quality assurance, reporting requirements

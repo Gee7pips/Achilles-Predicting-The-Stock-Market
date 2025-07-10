@@ -1,5 +1,7 @@
 Project Name: Sample Infrastructure Upgrade
-Contractor: ABC Builders Ltd.
+Contractor: BuildCo Ltd
 Budget: $1,200,000
-Milestones: Phase 1 completed, Phase 2 delayed by 30 days
-Invoice total: $400,000
+Milestones: Phase 1 complete; Phase 2 delay due to weather
+
+INVOICE #12345
+...
